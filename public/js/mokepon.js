@@ -224,7 +224,7 @@ function iniciarJuego() {
 }
 
 function unirseAlJuego() {
-    fetch("http://192.168.1.7:8080/unirse")
+    fetch("https://kserranoo.github.io/public:8080/unirse")
         .then(function (res) {
             if (res.ok) {
                 res.text()
