@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+
+body {
+    font-family: 'Silkscreen', cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.titulo {
+    color: hotpink;
+    font-family: 'Silkscreen';
+    font-weight: 600;
+    font-size: 75px;
+    width: 180vh;
+    height: 90px;
+    text-shadow: 3px 3px 3px rgb(11, 22, 59);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+   
+}
+
+h2 {
+    color: black;
+    text-shadow: 3px 3px 3px rgb(191, 191, 212);
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+
+}
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Silkscreen';
+}
+
+.tarjetas {
+    display: flex;
+    gap: 10px;
+}
+
+.botones-de-ataque {
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px; 
+    border-color: hotpink;
+    font-style: inherit;
+    color: rgb(10, 10, 10);
+    background-color: transparent;
+    text-shadow: 1px 1px 1px rgb(121, 110, 115);
+    font-size: 30px;
+    margin: 9px;
+    
+}
+
+.tarjeta-de-mokepon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: bisque;
+    width: 180px;
+    height: 140px;
+    background: hsla(115, 64%, 71%, 0.767);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: solid 2px hotpink;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+    font-size: 22px;
+    text-shadow: 0.7px 0.7px 0.7px rgb(7, 7, 7);
+
+}
+.tarjeta-de-mokepon img {
+    width: 90px;
+}
+
+#boton-seleccionarmascota {
+    width: 140px;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border: 1px solid hotpink;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    font-style: inherit;
+    color: rgb(10, 10, 10);
+    background: transparent;
+    text-shadow: 0.7px 0.7px 0.7px hotpink;
+}
+    #boton-seleccionarmascota:hover {
+        box-shadow: 0 0 10px 0 hotpink inset, 0 0 10px 4px hotpink;
+        background-color: palevioletred;
+    }
+
+
+
+input {
+   display: none;
+    
+}
+
+input:checked + label {
+    background: hsla(342, 82%, 69%, 0.644);
+
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+#mensajes {
+    background: rgba(245, 245, 245, 0.582);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: solid 1px hotpink;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#resultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#boton-reiniciarpartida {
+    border: 10px transparent;
+    color: rgb(10, 10, 10);
+    background: hsla(115, 64%, 71%, 0.767);
+    padding: 10px;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 150px 75px 150px;
+    text-align: center;
+    grid-column-gap: 5px;
+    align-items: center;
+      
+}
+
+#columna-jugador, #columna-oponente {
+    border: solid hotpink 2px;
+    border-radius: 10px;
+    margin-top: 20px; 
+    background: hsla(115, 64%, 71%, 0.767);                                                                                                           ;
+}
+
+#columna-vs {
+    border: transparent;
+    border-radius: 10px;
+    margin-top: 20px; 
+    background: rgba(245, 245, 245, 0.623)
+
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+#ver-mapa button {
+    width: 100px;
+    height: 50px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    border: 1px solid hotpink;
+    border-radius: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    font-style: inherit;
+    color: rgb(10, 10, 10);
+    background: transparent;
+/*     SI SE LE VA A COLOCAR TEXTO text-shadow: 0.7px 0.7px 0.7px hotpink;
+ */    }
+    #ver-mapa button:hover {
+        box-shadow: 0 0 10px 0 hotpink inset, 0 0 10px 4px hotpink;
+        background-color: palevioletred;
+
+    }
+
+@media (max-width: 570px) {
+    .tarjetas, .botones-de-ataque {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 370px) {
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 570px) {
+    .titulo {
+        font-weight: 200;
+        width: 90vh;
+        height: 30px;
+        font-size: 30px;
+        flex-direction: column;
+
+    }
+}
+
+@media (max-width: 570px) {
+    h2 {
+        font-weight: 100;
+        width: 70vh;
+        height: 15px;
+        font-size: 15px;
+        flex-direction: column;
+
+
+    }
+}
+
+@media (max-width: 570px) {
+    #mapa {
+        width: 300px;
+        height: 300px;  
+    }
+}
+@media (max-width: 570px) {
+    .tarjetas, .botones-de-ataque {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+       
+        <head>
+         <meta charset="utf-8" />
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> 🐲 DRAGONLANDS 🐲 </title>
+        <link rel="stylesheet" href="./styles.css">
+              
+        </head>
+        
+        <body background="./fondo/fondo.jpg">                     
+            <section id="seleccionar-mascota">  
+                <h1 class ="titulo"> 🐲 DRAGONLANDS 🐲</h1>
+                      
+                <h2> Selecciona tu dragón </h2>
+
+                <div id="contenedorTarjetas" class="tarjetas">
+                                                            
+                </div>
+                                
+                <button id="boton-seleccionarmascota"> Seleccionar </button>
+            </section>
+
+            <section id="ver-mapa">
+               
+                <p> Recorre el mapa para buscar un oponente </p>
+
+                <canvas id="mapa"> </canvas>
+                    <button class="btn third"
+                     
+                    ontouchend="detenerMovimiento()"
+                    onmouseup="detenerMovimiento()"
+                    ontouchstart="moverArr()"
+                    onmousedown="moverArr()"> ⬆️ 
+                    </button>
+            <div>
+                <button
+                    ontouchend="detenerMovimiento()" 
+                    onmouseup="detenerMovimiento()"
+                    ontouchstart="moverI()"
+                    onmousedown="moverI()">⬅️
+                </button>
+                <button
+                    ontouchend="detenerMovimiento()" 
+                    onmouseup="detenerMovimiento()"
+                    ontouchstart="moverAb()"
+                    onmousedown="moverAb()">⬇️
+                </button>
+                <button
+                    ontouchend="detenerMovimiento()" 
+                    onmouseup="detenerMovimiento()"
+                    ontouchstart="moverD()"
+                    onmousedown="moverD()">➡️  
+                </button>
+            </div>
+                
+               
+
+            </section>
+
+            <section id="seleccionar-ataque"  >
+                <h1 class ="titulo"> 🐲 DRAGONLANDS 🐲</h1>
+   
+                <h2> Selecciona tu ataque </h2>
+
+                <div id ="contenedorAtaques" class="botones-de-ataque">
+                                        
+                </div>
+
+                     
+                <div id="mensajes"> 
+                    <p id="resultado"> Suerte en la batalla </p>
+                    <section id="reiniciar-juego"> 
+                        <button id="boton-reiniciarpartida"> Volver a intentar </button>
+                    </section>
+                </div>
+                    
+        
+                <div class="ataques">
+
+                    <div id="columna-jugador">
+                        <p id="vidas-jugador">0</p>
+                        <p id="mascota-jugador"></p>
+                        <div id="ataques-del-jugador"></div>
+                    </div>
+
+                    <div id="columna-vs">
+
+                        <p> VS </p>
+                        
+                    </div>
+
+
+                    <div id="columna-oponente">
+                        <p id="vidas-oponente">0</p>
+                        <p id="mascota-oponente"></p>
+                        <div id="ataques-del-oponente"></div>
+                    </div>
+                </div>
+            
+                                               
+            </section>
+            <script src="./js/mokepon.js"></script>    
+        </body>
+</html>
